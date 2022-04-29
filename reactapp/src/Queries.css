@@ -19,7 +19,7 @@
   html {
     /* Now 1rem = 10px */
     /* (62.5% = 10/16 bc by default font-size=16px and we want font-size=10px) */
-    font-size: 46%;
+    font-size: 36%;
   }
 }
 /**************************/
@@ -34,45 +34,12 @@
 }
 
 /**************************/
-/******* BELOW 832px ******/
+/******* BELOW 304px ******/
 /**************************/
-@media (max-height: 52em) {
+@media (max-width: 18em) {
   html {
     /* Now 1rem = 10px */
     /* (62.5% = 10/16 bc by default font-size=16px and we want font-size=10px) */
-    font-size: 50%;
-  }
-}
-
-/**************************/
-/******* BELOW 752px ******/
-/**************************/
-@media (max-height: 47em) {
-  html {
-    /* Now 1rem = 10px */
-    /* (62.5% = 10/16 bc by default font-size=16px and we want font-size=10px) */
-    font-size: 46%;
-  }
-}
-
-/**************************/
-/******* BELOW 624px ******/
-/**************************/
-@media (max-height: 39em) {
-  html {
-    /* Now 1rem = 10px */
-    /* (62.5% = 10/16 bc by default font-size=16px and we want font-size=10px) */
-    font-size: 40%;
-  }
-}
-
-/**************************/
-/******* BELOW 512px ******/
-/**************************/
-@media (max-width: 21em) {
-  html {
-    /* Now 1rem = 10px */
-    /* (62.5% = 10/16 bc by default font-size=16px and we want font-size=10px) */
-    font-size: 34%;
+    font-size: 20%;
   }
 }
