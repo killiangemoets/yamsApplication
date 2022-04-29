@@ -106,9 +106,9 @@ function App() {
       setGameBoard(modele.state.gameBoards[modele.state.currentPlayer]);
       document.querySelector(".usernames").classList.add("hidden");
     } else if (usernames.filter((el) => el === "").length) {
-      setInvalidUsernames("Enter a username for each player pleas");
+      setInvalidUsernames("Please enter a username for each player!");
     } else if (usernames.filter((el) => el.length > 12).length) {
-      setInvalidUsernames("A username can't have more than 12 characters");
+      setInvalidUsernames("A username cannot be longer than 12 characters!");
     }
   }
 
