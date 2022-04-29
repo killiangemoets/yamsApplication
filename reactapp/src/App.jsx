@@ -13,6 +13,8 @@ import PauseMenu from "./components/pauseMenu";
 import Rules from "./components/rules";
 import EndGame from "./components/endGame.jsx";
 import Usernames from "./components/usernames";
+import KikiStore from "./components/kikistore";
+import BlackScreen from "./components/balckscreen";
 
 import * as modele from "./components/modele";
 import "./App.css";
@@ -85,6 +87,12 @@ function App() {
 
   useEffect(() => {
     init();
+    setTimeout(function () {
+      document.querySelector(".black-screen").classList.add("hidden");
+    }, 1000);
+    setTimeout(function () {
+      document.querySelector(".background-kikistore").classList.add("hidden");
+    }, 3000);
   }, []);
 
   function startGame(numPlayers) {
@@ -270,6 +278,8 @@ function App() {
         getUsernames={getUsernames}
         invalidUsernames={invalidUsernames}
       />
+      <KikiStore />
+      <BlackScreen />
     </div>
   );
 }
