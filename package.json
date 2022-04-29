@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "cd reactapp && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "heroku-postbuild": "cd reactapp && npm install && npm run build",
     "start": "node ./bin/www"
   },
   "dependencies": {
