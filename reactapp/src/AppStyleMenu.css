@@ -1,0 +1,346 @@
+/* MENUS */
+.background-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+  padding-bottom: 12rem;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  background-color: hsla(79, 81%, 94%, 0.8);
+  /* background-color: hsla(3, 60%, 42%, 0.671); */
+  transition: all 0.5s;
+}
+
+.btn--num-players,
+.btn--num-players:link,
+.btn--num-players:visited,
+.btn--pause,
+.btn--pause:link,
+.btn--pause:visited {
+  display: inline-block;
+
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 1.8rem 3.2rem;
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+
+  transition: all 0.3s;
+  background-color: #66a80f;
+  color: #f4fce3;
+}
+
+.btn--num-players:hover,
+.btn--num-players:active,
+.btn--pause:hover,
+.btn--pause:active {
+  background-color: #f4fce3;
+  color: #66a80f;
+}
+
+/* START MENU */
+
+.start-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.game-title {
+  font-size: 8rem;
+  color: #333;
+}
+
+.num-players-title {
+  font-size: 4rem;
+  text-align: center;
+  color: #333;
+  padding-bottom: 4.8rem;
+}
+
+.yams-icon {
+  font-size: 16rem;
+  color: #333;
+}
+
+.num-players-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* PAUSE MENU */
+.pause-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.pause-title {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.pause-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+/* END MENU */
+
+.end-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.winner-title {
+  font-size: 6.4rem;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.all-scores {
+  display: flex;
+  gap: 2rem;
+}
+.one-score {
+  background-color: #66a80f;
+  padding: 2.2rem 2rem;
+  border-radius: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.player--num {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.player--score {
+  font-size: 4rem;
+}
+
+.best-scores-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.best-scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1.2rem;
+}
+.best-scores-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1.2rem;
+  height: 28rem;
+  overflow-y: scroll;
+}
+
+.best-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: #333;
+}
+
+.best-username {
+  font-size: 3.6rem;
+}
+
+.best-value {
+  font-size: 3.6rem;
+}
+
+/* USERNAMES MENU */
+
+.invalid-message {
+  height: 3.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.usernames-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.new-top-score {
+  color: #333;
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.usernames-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+  border-radius: 8px;
+  /* width: 20%; */
+}
+
+.usernames-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-usernames {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.usernames-form input {
+  margin-top: 1rem !important;
+  padding: 1.2rem 1.2rem;
+  font-size: 2.8rem;
+  color: #66a80f;
+  /* width: 32rem; */
+
+  border: none;
+  border-radius: 8px;
+}
+.usernames-form input::placeholder {
+  color: #999;
+}
+
+.usernames-form input:focus {
+  outline: none;
+}
+
+.btn-usernames-box {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--usernames,
+.btn--usernames:link,
+.btn--usernames:visited {
+  margin-top: 1rem !important;
+
+  display: inline-block;
+
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 1.6rem 4.6rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+
+  transition: all 0.3s;
+  background-color: #66a80f;
+  color: #f4fce3;
+}
+
+.btn--usernames:hover,
+.btn--usernames:active {
+  background-color: #f4fce3;
+  color: #66a80f;
+}
+
+/* RULES */
+
+.rule-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rules-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rules-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rules-menu {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24rem;
+  width: 100vw;
+  padding: 0 4rem;
+}
+
+.rules-menu div {
+  width: 100vw;
+}
+
+.rules-title {
+  text-align: center;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+}
+
+.rules-text {
+  color: #333;
+  font-size: 3.2rem;
+  padding: 0 4rem;
+  white-space: initial;
+  word-wrap: break-word;
+  width: 100vw;
+  text-align: center;
+}
