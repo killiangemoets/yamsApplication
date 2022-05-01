@@ -21,7 +21,7 @@ export default function EndGame(props) {
           })}
         </div>
         <div className="best-scores">
-          <h2 className="best-scores-title">Bests scores</h2>
+          <h2 className="best-scores-title">Best scores</h2>
           <div className="best-scores-list">
             {props.bestScores.map((score, i) => {
               return (
