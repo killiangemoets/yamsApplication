@@ -1,7 +1,7 @@
 // CONFIGURATION
 const numDices = 5;
 const numRounds = 13;
-const scoreForBonus = 65;
+const scoreForBonus = 63;
 const bonus = 35;
 
 const combinationsPoints = {
