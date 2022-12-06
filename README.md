@@ -2,4 +2,4 @@
 
 Yams game coded with ReactJS, ExpressJs and MongoDB.
 
-Link to the game: https://yamsgame-kikistore.herokuapp.com/
+Link to the game: https://yams-application.vercel.app/
