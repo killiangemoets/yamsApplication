@@ -145,9 +145,9 @@ export default function Combinations(props) {
         >
           {/* <div className="bonus-sum"> */}
           <p className="bonus-current"> {props.gameBoard.bonus.score}</p>
-          <p className="bonus-max">/65</p>
+          <p className="bonus-max">/63</p>
           {/* </div> */}
-          {/* <div className="bonus-max">/65</div> */}
+          {/* <div className="bonus-max">/63</div> */}
         </div>
       </div>
     </>
