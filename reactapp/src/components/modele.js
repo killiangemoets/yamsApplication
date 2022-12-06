@@ -11,6 +11,7 @@ const combinationsPoints = {
   yahtzee: 50,
 };
 
+// STATE
 export const state = {
   gameState: 0, // 0 for game on, 1 for game over
   round: 1,
@@ -30,6 +31,8 @@ export const state = {
     type: "",
   },
 };
+
+// FUNCTIONS
 
 export const initGame = function () {
   state.gameState = 0;
