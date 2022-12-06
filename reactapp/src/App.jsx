@@ -40,7 +40,7 @@ function App() {
   const [invalidUsernames, setInvalidUsernames] = useState("");
 
   async function getAllBestScores() {
-    var rawResponse = await fetch("/allscores");
+    var rawResponse = await fetch("https://yamsapplicationbackend-production.up.railway.app/allscores");
     var response = await rawResponse.json();
 
     const bestScores = response.data.scores.sort((a, b) => b.score - a.score);
@@ -58,7 +58,7 @@ function App() {
   // }
 
   async function updateBestScores(NewBestScores) {
-    await fetch("/replaceallscores", {
+    await fetch("https://yamsapplicationbackend-production.up.railway.app/replaceallscores", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
