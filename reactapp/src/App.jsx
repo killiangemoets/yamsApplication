@@ -61,7 +61,7 @@ function App() {
 
   async function updateBestScores(NewBestScores) {
     await fetch(
-      "https://yamsapplicationbackend-production.up.railway.app/replaceallscore",
+      "https://yamsapplicationbackend-production.up.railway.app/replaceallscores",
       {
         method: "POST",
         headers: {
