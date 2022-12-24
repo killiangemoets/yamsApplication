@@ -149,8 +149,8 @@ function App() {
       });
     });
     allScoresArray = allScoresArray.sort((a, b) => b.score - a.score);
-    if (allScoresArray.length > 10)
-      allScoresArray = allScoresArray.slice(0, 10);
+    if (allScoresArray.length > 20)
+      allScoresArray = allScoresArray.slice(0, 20);
     await updateBestScores(allScoresArray);
     await getAllBestScores();
   }
