@@ -40,9 +40,7 @@ function App() {
   const [invalidUsernames, setInvalidUsernames] = useState("");
 
   async function getAllBestScores() {
-    var rawResponse = await fetch(
-      "https://yamsapplicationbackend-production.up.railway.app/allscores"
-    );
+    var rawResponse = await fetch("https://yams-i47a.onrender.com/allscores");
     var response = await rawResponse.json();
 
     const bestScores = response.data.scores.sort((a, b) => b.score - a.score);
@@ -60,16 +58,13 @@ function App() {
   // }
 
   async function updateBestScores(NewBestScores) {
-    await fetch(
-      "https://yamsapplicationbackend-production.up.railway.app/replaceallscores",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(NewBestScores),
-      }
-    );
+    await fetch("https://yams-i47a.onrender.com/replaceallscores", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(NewBestScores),
+    });
   }
 
   function init() {
